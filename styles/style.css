@@ -148,4 +148,9 @@ body {
     .apresentacao__conteudo{
         width: auto;
     }
+    .roda-pe{
+        font-size: small;
+        justify-content: center;
+        margin: auto;
+    }
 }
