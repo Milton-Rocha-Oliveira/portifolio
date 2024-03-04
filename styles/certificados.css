@@ -100,7 +100,7 @@ img{
 .apresentacao__paragrafo{
     color: var(--cor--tercearia);
     text-align: center;
-    margin-top: -3rem;
+    margin-top: -2rem;
     display: flex;
     justify-content: center;
     font-family: var(--fonte--secundaria);
@@ -116,7 +116,7 @@ img{
     font-weight: 900;
     display: flex;
     justify-content: center;
-    margin: auto;
+    margin-top:2rem;
     padding: auto;
 }
 .roda-pe:hover{
