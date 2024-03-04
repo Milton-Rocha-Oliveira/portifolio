@@ -86,6 +86,7 @@ img{
     font-family: var(--fonte--primaria);
     color: var(--cor--primaria);
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .apresentacao__conteudo__texto:hover{
