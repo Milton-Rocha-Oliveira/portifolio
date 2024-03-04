@@ -42,7 +42,7 @@ body {
 }
 .cabesalho__menu__link:hover{
     color: var(--cor--segundaria);
-    font-size: 2.5rem;
+    font-size: 1.7rem;
 }
 
 .apresentacao__texto{
@@ -128,7 +128,7 @@ img:hover{
         text-decoration: none;
     }
     .cabesalho__menu__link:hover{
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     .apresentacao{
         flex-direction: column-reverse;
@@ -187,12 +187,7 @@ img:hover{
         flex-direction: column;
         gap: 2rem;
     }
-    
-    img{
-       border: solid 0.2rem var(--cor--segundaria); 
-       height: 30%;
-       width: 100%;
-    }
+
     
     img:hover{
         width: 100%;
@@ -271,16 +266,6 @@ img:hover{
         gap: 2rem;
     }
     
-    img{
-       border: solid 0.2rem var(--cor--tercearia); 
-       height: 30%;
-       width: 100%;
-    }
-    
-    img:hover{
-        width: 70%;
-        border: solid 0.2rem var(--cor--secundaria);
-    }
     
     .apresentacao__links__link{
           gap: 0.1rem;
