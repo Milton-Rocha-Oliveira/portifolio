@@ -42,7 +42,7 @@ body {
 }
 .cabesalho__menu__link:hover{
     color: var(--cor--segundaria);
-    font-size: 1.7rem;
+    font-size: 3rem;
 }
 
 .apresentacao__texto{
@@ -128,7 +128,7 @@ img:hover{
         text-decoration: none;
     }
     .cabesalho__menu__link:hover{
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
     .apresentacao{
         flex-direction: column-reverse;
