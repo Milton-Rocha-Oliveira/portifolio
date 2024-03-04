@@ -29,6 +29,7 @@ body {
 .cabesalho__menu{
     display: flex;
     gap: 5rem;
+    margin-bottom: 2rem;
 }
 
 .cabesalho__menu__link{
