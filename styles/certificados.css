@@ -86,7 +86,6 @@ img{
     font-family: var(--fonte--primaria);
     color: var(--cor--primaria);
     gap: 1rem;
-    margin-bottom: 2rem;
 }
 
 .apresentacao__conteudo__texto:hover{
@@ -116,7 +115,7 @@ img{
     font-weight: 900;
     display: flex;
     justify-content: center;
-    margin-top:2rem;
+    margin-top: 2rem;
     padding: auto;
 }
 .roda-pe:hover{
@@ -143,7 +142,7 @@ img{
         text-decoration: none;
     }
     .cabesalho__menu__link:hover{
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     
     
