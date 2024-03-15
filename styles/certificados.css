@@ -89,7 +89,7 @@ img{
 }
 
 .apresentacao__conteudo__texto:hover{
-    font-size: 2.3rem;
+    font-size: 1.75rem;
     background-color:var(--cor--segundaria);
     font-weight: 900;
     color: var(--cor--tercearia);
