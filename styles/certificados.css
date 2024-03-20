@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;700&family=Cute+Font&family=Just+Another+Hand&family=Labrada&family=Pacifico&family=Qwitcher+Grypen&display=swap');
 :root {
-    --cor--primaria:#253C59;
-    --cor--segundaria:  #99B4BF;
+    --cor--primaria:#042a58;
+    --cor--segundaria:  #0399d4;
     --cor--tercearia:#D9B70D;
+    --cor--meio:#000e20;
     --fonte--primaria: 'Lobster', sans-serif;
     --fonte--secundaria:'Labrada', serif;
     --fonte--tercearia: 'Caveat', cursive ;
@@ -16,10 +17,11 @@
 
 body {
     box-sizing: border-box;
-    background-color: var(--cor--primaria);
+    background:linear-gradient(var(--cor--primaria), var(--cor--meio),var(--cor--primaria));
     image-rendering: optimizeQuality;
     color: var(--cor--primaria);
     background-size:cover;
+    
 }
 
 .cabesalho{
@@ -34,78 +36,97 @@ body {
 }
 
 .cabesalho__menu__link{
-    font-family:var(--fonte--tercearia);
+    font-family:var(--fonte--primaria);
     color: var(--cor--tercearia);
-    font-size: 2.3rem;
-    font-weight: 600;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.cabesalho__menu__link__atual{
+    font-family:var(--fonte--primaria);
+    color: var(--cor--segundaria);
+    font-size: 2.1rem;
     text-decoration: none;
 }
 .cabesalho__menu__link:hover{
-    color: var(--cor--segundaria);
-    font-size: 2.5rem;
+    color: var(--cor--tercearia);
+    font-size: 2.1rem;
+}
+.cabesalho__menu__link__atual:hover{
+    color: var(--cor--tercearia);
+    font-size: 2.1rem;
 }
 
-.apresentacao__conteudo{
-    margin: auto;
-    width: 30%;
+/*Parte exclusiva da pagina certificados*/
+  
+  .swiper {
+    height: 40rem ;
+  }
+  
+  .swiper-slide {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 3rem;
+    justify-content: center;
+  }
+
+img {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 2rem;
+  }
+
+  .button{
+    color: #D9B70D;
+    background-color: #D9B70D;
+  }
+
+/*Fim parte exclusiva certificados*/
+.apresentacao{
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    height: 40%;
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 2.25rem;
-    font-family:var(--fonte--primaria);
+    font-size: 2rem;
+    font-family:var(--fonte--tercearia);
     color: var(--cor--tercearia);
+    font-weight: 100;
 }
 
-.apresentacao__links{
+.apresentacao__certificados{
     display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-family:var(--fonte--secundaria);
-    gap: 2rem;
-}
-
-img{
-    height: 3.5rem;
-}
-
-.apresentacao__conteudo__texto{
-    background-color: var(--cor--tercearia);
-    display: flex;
-    justify-content: center;
     align-items: center;
-    border: solid 0.1rem var(--cor--tercearia);
-    border-radius: 5rem;
-    text-decoration: none;
-    font-family: var(--fonte--primaria);
-    color: var(--cor--primaria);
-    gap: 1rem;
-}
-
-.apresentacao__conteudo__texto:hover{
-    font-size: 1.75rem;
-    background-color:var(--cor--segundaria);
-    font-weight: 900;
-    color: var(--cor--tercearia);
-    border-radius: 5rem;
-}
-
-.apresentacao__paragrafo{
-    color: var(--cor--tercearia);
-    text-align: center;
-    margin-top: -2rem;
-    display: flex;
+    margin: auto;
     justify-content: center;
-    font-family: var(--fonte--secundaria);
-    font-size: 1.2rem;
+}
+img{
+    border: solid 0.2rem var(--cor--segundaria);
+    width: 80%;
+    height: 70%;
+}
+img:hover{
+    border: solid 0.3rem var(--cor--tercearia);
+}
+.link{
+    display: flex;
+    align-items: center;
+    padding: auto;
+    border-radius: 10%;
 }
 
+.paragrafo__certificados{
+    margin-top: 5%;
+    text-align: center;
+    height: 10%;
+    font-size: 1.2rem;
+    font-family: var(--fonte--secundaria);
+    color: var(--cor--segundaria);
+}
+.paragrafo__certificados:hover{
+    color: var(--cor--tercearia);
+}
 
 .roda-pe{
     padding: 0.3rem;
@@ -160,44 +181,12 @@ img{
         font-size: 2rem;
         font-weight: 100;
     }
-    
-    .apresentacao__links{
-        display: flex;
-        flex-direction: column;
-        justify-content: baseline;
-        text-decoration: none;
+    .swiper{ 
+        height:30rem;
+     }
+    .paragrafo__certificados{
         font-size: 1rem;
-        font-family:var(--fonte--secundaria);
-        gap: 1.5rem;
     }
-    
-    img{
-        height: 2rem;
-    }
-    
-    .apresentacao__conteudo__texto{
-        background-color: var(--cor--tercearia);
-        padding: 0.5rem;
-        font-family: var(--fonte--primaria);
-        color: var(--cor--primaria);
-        font-size: 2rem;
-        gap: 1.5rem;
-    }
-    
-    .apresentacao__conteudo__texto:hover{
-        background-color: var(--cor--segundaria);
-        font-size: 2rem;
-        font-weight: 100;
-        color: var(--cor--tercearia);
-        border-radius: 5rem;
-    }
-    
-    .apresentacao__paragrafo{
-        font-size: 1rem;
-        margin-top: -1.5rem;
-    }
-    
-    
     .roda-pe{
         margin:auto;
         display: flex;
@@ -223,12 +212,12 @@ img{
     gap: 3.3rem;
 }
 
-.cabesalho__menu__link{
+.link{
     font-size: 2rem;
     font-weight: 200;
     text-decoration: none;
 }
-.cabesalho__menu__link:hover{
+.link:hover{
     font-size: 2rem;
 }
 
@@ -259,9 +248,6 @@ img{
     gap: 1.5rem;
 }
 
-img{
-    height: 1.5rem;
-}
 
 .apresentacao__conteudo__texto{
     background-color: var(--cor--tercearia);
@@ -279,6 +265,9 @@ img{
     color: var(--cor--tercearia);
     border-radius: 5rem;
 }
+.swiper{ 
+    height:25rem;
+ }
 
 .apresentacao__paragrafo{
     font-size: 0.7rem;
@@ -347,9 +336,6 @@ img{
         gap: 1.2rem;
     }
     
-    img{
-        height: 2rem;
-    }
     
     .apresentacao__conteudo__texto{
         font-size: 1rem;
@@ -373,6 +359,10 @@ img{
         color: var(--cor--tercearia);
         border-radius: 5rem;
     }
+    .swiper{ 
+        height:18rem;
+        margin: 2rem;
+     }
     
     .apresentacao__paragrafo{
         margin-top: -1.2rem;

@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;700&family=Cute+Font&family=Just+Another+Hand&family=Labrada&family=Pacifico&family=Qwitcher+Grypen&display=swap');
 :root {
-    --cor--primaria:#253C59;
-    --cor--segundaria: #99B4BF;
+    --cor--primaria:#042a58;
+    --cor--segundaria:  #0399d4;
     --cor--tercearia:#D9B70D;
+    --cor--meio:#000e20;
     --fonte--primaria: 'Lobster', sans-serif;
     --fonte--secundaria:'Labrada', serif;
     --fonte--tercearia: 'Caveat', cursive ;
@@ -16,7 +17,7 @@
 
 body {
     box-sizing: border-box;
-    background-color: var(--cor--primaria);
+    background:linear-gradient(var(--cor--primaria), var(--cor--meio),var(--cor--primaria));
     image-rendering: optimizeQuality;
     color: var(--cor--tercearia);
     background-size:cover;
@@ -33,15 +34,20 @@ body {
 }
 
 .cabesalho__menu__link{
-    font-family:var(--fonte--tercearia);
+    font-family:var(--fonte--primaria);
     color: var(--cor--tercearia);
-    font-size: 2.3rem;
-    font-weight: 600;
+    font-size: 2rem;
     text-decoration: none;
 }
 .cabesalho__menu__link:hover{
     color: var(--cor--segundaria);
-    font-size: 2.5rem;
+    font-size: 2.1rem;
+}
+.cabesalho__menu__link__atual{
+    font-family:var(--fonte--primaria);
+    color: var(--cor--segundaria);
+    font-size: 2.1rem;
+    text-decoration: none;
 }
 
 .foto{
@@ -121,7 +127,7 @@ body {
     justify-content: center;
 }
 .roda-pe:hover{
-    color: var(--cor--segundaria);
+    color: var(--cor--tercearia);
     font-size: 1.62rem;
 }
 
