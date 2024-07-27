@@ -44,7 +44,7 @@ body {
 .cabesalho__menu__link__atual{
     font-family:var(--fonte--primaria);
     color: var(--cor--segundaria);
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     text-decoration: none;
 }
 .cabesalho__menu__link:hover{
@@ -58,48 +58,29 @@ body {
 
 /*Parte exclusiva da pagina certificados*/
   
-  .swiper {
-    height: 40rem ;
-  }
-  
-  .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
 img {
     margin: auto;
     display: flex;
     align-items: center;
-    width: 2rem;
-  }
-
-  .button{
-    color: #D9B70D;
-    background-color: #D9B70D;
+    width: 10rem;
   }
 
 /*Fim parte exclusiva certificados*/
 .apresentacao{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: auto;
-    width: 50%;
+    width: 70%;
     height: 40%;
-}
-
-.apresentacao__conteudo__titulo{
-    font-size: 2rem;
-    font-family:var(--fonte--tercearia);
-    color: var(--cor--tercearia);
-    font-weight: 100;
 }
 
 .apresentacao__certificados{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: auto;
     justify-content: center;
+    gap: 1rem;
 }
 img{
     border: solid 0.2rem var(--cor--segundaria);
@@ -117,10 +98,10 @@ img:hover{
 }
 
 .paragrafo__certificados{
-    margin-top: 5%;
+    margin-bottom:1.5rem;
     text-align: center;
     height: 10%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: var(--fonte--secundaria);
     color: var(--cor--segundaria);
 }
@@ -154,11 +135,13 @@ img:hover{
     .cabesalho__menu{
         display: flex;
         justify-content: center;
-        gap: 7rem;
+        gap: 5rem;
     }
-    
+    .cabesalho__menu__link__atual{
+        font-size: 2.8rem;
+    }
     .cabesalho__menu__link{
-        font-size: 2.3rem;
+        font-size: 2rem;
         font-weight: 300;
         text-decoration: none;
     }
@@ -209,15 +192,17 @@ img:hover{
 .cabesalho__menu{
     display: flex;
     justify-content: center;
-    gap: 3.3rem;
+    gap: 2rem;
 }
-
-.link{
-    font-size: 2rem;
+.cabesalho__menu__link__atual{
+    font-size: 2.5rem;
+}
+.paragrafo__certificados{
+    font-size: 1.5rem;
     font-weight: 200;
     text-decoration: none;
 }
-.link:hover{
+.paragrafo__certificados:hover{
     font-size: 2rem;
 }
 
@@ -265,9 +250,6 @@ img:hover{
     color: var(--cor--tercearia);
     border-radius: 5rem;
 }
-.swiper{ 
-    height:25rem;
- }
 
 .apresentacao__paragrafo{
     font-size: 0.7rem;
@@ -288,6 +270,7 @@ img:hover{
 
 @media(max-width:400px){
     .cabesalho{
+        margin: auto;
         padding:1rem ;
         color: var(--cor--primaria);
     }
@@ -295,13 +278,14 @@ img:hover{
     .cabesalho__menu{
         display: flex;
         justify-content: center;
-        gap: 1.7rem;
+        gap: 1rem;
+        margin: 0.5rem;
     }
-    
+    .cabesalho__menu__link__atual{
+        font-size: 2rem;
+    }
     .cabesalho__menu__link{
-        font-family:var(--fonte--tercearia);
-        color: var(--cor--tercearia);
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: 100;
         text-decoration: none;
     }
@@ -309,10 +293,12 @@ img:hover{
         color: var(--cor--segundaria);
         font-size: 1.8rem;
     }
+    .paragrafo__certificados{
+        font-size: 1rem;
+    }
 
     .apresentacao__conteudo{
         margin: auto;
-        width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -359,11 +345,6 @@ img:hover{
         color: var(--cor--tercearia);
         border-radius: 5rem;
     }
-    .swiper{ 
-        height:18rem;
-        margin: 2rem;
-     }
-    
     .apresentacao__paragrafo{
         margin-top: -1.2rem;
         font-size: 0.7rem;
