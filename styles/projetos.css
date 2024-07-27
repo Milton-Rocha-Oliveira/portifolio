@@ -47,7 +47,7 @@ body {
 .cabesalho__menu__link__atual{
     font-family:var(--fonte--primaria);
     color: var(--cor--segundaria);
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     text-decoration: none;
 }
 
@@ -162,16 +162,10 @@ img:hover{
     .cabesalho__menu{
         display: flex;
         justify-content: center;
-        gap: 3rem;
+        gap: 2rem;
     }
-    
-    .cabesalho__menu__link{
-        font-size: 2rem;
-        font-weight: 200;
-        text-decoration: none;
-    }
-    .cabesalho__menu__link:hover{
-        font-size: 2rem;
+    .cabesalho__menu__link__atual{
+        font-size: 2.5rem;
     }
     
     .apresentacao__texto{
@@ -222,8 +216,8 @@ img:hover{
 }
 
 @media(max-width:400px){
-     .cabesalho{
-        margin: 1rem;
+    .cabesalho{
+        margin: auto;
         padding:1rem ;
         color: var(--cor--primaria);
     }
@@ -231,13 +225,14 @@ img:hover{
     .cabesalho__menu{
         display: flex;
         justify-content: center;
-        gap: 1.7rem;
+        gap: 1rem;
+        margin: 0.5rem;
     }
-    
+    .cabesalho__menu__link__atual{
+        font-size: 2rem;
+    }
     .cabesalho__menu__link{
-        font-family:var(--fonte--tercearia);
-        color: var(--cor--tercearia);
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: 100;
         text-decoration: none;
     }
@@ -246,17 +241,9 @@ img:hover{
         font-size: 1.8rem;
     }
     
-    .apresentacao__texto{
-        margin-top: -2rem;
-        font-family: var(--fonte--primaria);
-        color:var(--cor--tercearia);
-        font-size: 1.1rem;
-        font-weight: 100;
-    }
-    
     .apresentacao__conteudo{
         top:30%;
-        margin:auto;
+        margin:2rem;
         width: 100%;
         display: flex;
         justify-content: center;
