@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 1rem;
+}
+body {
+    background-color: black;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+}
